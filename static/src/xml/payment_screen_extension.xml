@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="pos_multiple_invoice_journal" inherit_id="point_of_sale.template"
+    xml:space="preserve">
+	<t t-name="PaymentScreenButtons" t-inherit="point_of_sale.PaymentScreenButtons" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[contains(@class, 'payment-buttons')]" position="inside">
+            <button class="btn btn-primary py-3 rounded-0 border-bottom highlight text-bg-primary" t-on-click="showCreditNotePopup">
+                <i class="fa fa-search me-1"/> Buscar Nota de Crédito
+            </button>
+        </xpath>
+    </t>
+</templates>
